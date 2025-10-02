@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UNSAAC · Misión, Visión y FODA</title>
+  <meta name="description" content="Análisis crítico de la misión y visión de la UNSAAC y matriz FODA con estrategias FO, DO, FA y DA." />
+  <style>
+    :root{
+      --bg:#0b1020; --card:#111529; --muted:#7d89b0; --text:#e8eefc; --brand:#5dd4ff;
+      --f:#8bd97b; --d:#2c3b4a; --o:#ff7ab6; --a:#04c99e; --ring:rgba(93,212,255,.25)
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,sans-serif;background:radial-gradient(1200px 800px at 20% -10%,#192043 10%,transparent),radial-gradient(1200px 800px at 120% 10%,#151a34 10%,transparent),var(--bg);color:var(--text);line-height:1.55}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{opacity:.9;text-decoration:underline}
+    .wrap{max-width:1100px;margin:auto;padding:40px 20px}
+    header{display:flex;gap:18px;align-items:center;justify-content:space-between;margin-bottom:24px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#4fc4ff, #8b5cf6);display:grid;place-items:center;box-shadow:0 10px 30px rgba(79,196,255,.35)}
+    .logo span{font-weight:800;color:white}
+    h1{font-size:clamp(22px,4vw,34px);margin:0}
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{background:rgba(255,255,255,.04);padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.06)}
+
+    .hero{background:linear-gradient(180deg,rgba(255,255,255,.05),transparent);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:26px;display:grid;gap:10px}
+    .hero p{color:var(--muted);margin:0}
+
+    .grid{display:grid;gap:18px;margin:28px 0}
+    .grid.cols-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:20px;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+    .card h3{margin:0 0 10px 0}
+    .card p{margin:0 0 8px 0;color:#cdd6f4}
+    .tag{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.06);font-size:12px;background:rgba(255,255,255,.04);margin-right:8px}
+
+    /* FODA visual */
+    .swot{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:6px}
+    .leaf{position:relative;overflow:hidden;border-radius:30px;padding:20px;min-height:200px;color:#0f1326}
+    .leaf h4{margin:0 0 6px 0;font-size:18px}
+    .leaf p, .leaf li{color:#0f1326}
+    .leaf ul{margin:6px 0 0 18px}
+    .f{background:linear-gradient(135deg,#baf5a5,#79dd64)}
+    .d{background:linear-gradient(135deg,#2f3e57,#1f2a3a);color:#dce9ff}
+    .d h4,.d p,.d li{color:#eaf2ff}
+    .o{background:linear-gradient(135deg,#ffc1df,#ff85c1)}
+    .a{background:linear-gradient(135deg,#a3ffe7,#21d1ab)}
+
+    details{border:1px dashed rgba(255,255,255,.15);border-radius:12px;padding:14px 16px}
+    details[open]{background:rgba(255,255,255,.03)}
+    summary{cursor:pointer;font-weight:700}
+
+    .matrix{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:14px}
+    .matrix .mcard{border-radius:12px;border:1px solid rgba(255,255,255,.08);padding:14px;background:rgba(255,255,255,.03)}
+
+    .refs{padding:22px;border-top:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);border-radius:16px;margin-top:28px}
+    .refs li{margin:8px 0}
+    .chip{display:inline-block;font-size:12px;padding:6px 10px;border-radius:999px;background:rgba(93,212,255,.12);border:1px solid var(--ring);margin-left:8px}
+
+    .note{font-size:12px;color:var(--muted)}
+    .kpi{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .kpi .tag{background:rgba(93,212,255,.08)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo"><span>SW</span></div>
+        <div>
+          <h1>UNSAAC · Análisis de Misión, Visión y FODA</h1>
+          <p class="note">Universidad Nacional de San Antonio Abad del Cusco (Cusco, Perú)</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#mision">Misión</a>
+        <a href="#vision">Visión</a>
+        <a href="#foda">FODA</a>
+        <a href="#referencias">Referencias</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <p>Documento académico con análisis crítico y constructivo, sustentado en normativa y documentos oficiales. Incluye matriz FODA con estrategias FO, DO, FA y DA, y referencias en formato APA con enlaces.</p>
+      <div class="kpi">
+        <span class="tag">Licenciamiento SUNEDU: 8 años (2019)</span>
+        <span class="tag">Líneas de Investigación 2023–2026</span>
+        <span class="tag">PEI 2024–2030 en formulación</span>
+      </div>
+    </section>
+
+    <!-- MISIÓN -->
+    <section id="mision" class="grid cols-2">
+      <div class="card">
+        <h3>Misión (síntesis institucional)</h3>
+        <p>Formación profesional científica, tecnológica y humanística; investigación y responsabilidad social para el desarrollo regional y nacional.</p>
+        <p class="note">Fuentes: <a target="_blank" href="https://www.unsaac.edu.pe/transparencia-institucional-indicador-55/">Transparencia – Misión/Visión</a>; <a target="_blank" href="https://vrin.unsaac.edu.pe/">VRIN</a>.</p>
+      </div>
+      <div class="card">
+        <h3>Evaluación con las 5 preguntas</h3>
+        <ul>
+          <li><strong>¿Qué hacemos?</strong> Docencia, investigación y proyección social. <em>Cumple</em>.</li>
+          <li><strong>¿Para quién?</strong> Estudiantes y sociedad (Cusco/Perú). <em>Parcial</em>: especificar beneficiarios prioritarios.</li>
+          <li><strong>¿Cómo?</strong> Calidad, internacionalización, acreditación. <em>Parcial</em>: precisar métodos (OA/OBE, transferencia).</li>
+          <li><strong>¿Con qué capacidades/valores?</strong> Licenciamiento, tradición, museos/centros. <em>Parcial</em>: listar capacidades distintivas.</li>
+          <li><strong>¿Para qué impacto?</strong> Desarrollo territorial y empleabilidad. <em>Cumple</em> pero sin métricas.</li>
+        </ul>
+        <p class="note">Marco: Chiavenato, <a target="_blank" href="https://www.gob.mx/cms/uploads/attachment/file/911563/127-Planeacion-estrategica-fundametos-chiavenato-idalberto.pdf">Planeación estratégica</a>.</p>
+      </div>
+      <div class="card">
+        <h3>Recomendaciones de mejora (misión)</h3>
+        <ul>
+          <li>Definir <strong>segmentos prioritarios</strong> del territorio (agroandino, patrimonio/turismo, salud rural, energía/agua).</li>
+          <li>Explicitar el <strong>cómo</strong>: aprendizaje basado en resultados, clínicas y laboratorios abiertos, datos y ciencia abierta.</li>
+          <li>Incluir <strong>capacidades diferenciales</strong> (interculturalidad andina, K’ayra, Museo Inka, VRIN) y <strong>KPI</strong> de impacto.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Soportes institucionales</h3>
+        <ul>
+          <li><a target="_blank" href="https://www.sunedu.gob.pe/sunedu-otorga-la-licencia-institucional-a-la-universidad-nacional-de-san-antonio-abad-del-cusco/">Licenciamiento SUNEDU (8 años)</a>.</li>
+          <li><a target="_blank" href="https://vrin.unsaac.edu.pe/data/661-R-691-2024-UNSAAC-553541-PROBAR%20LAS%20LINEAS%20DE%20INVESTIGACI%C3%93N%20%20UNSAAC%202023-2026.pdf">Líneas de investigación 2023–2026 (Resolución)</a>.</li>
+          <li><a target="_blank" href="https://museoinka.unsaac.edu.pe/">Museo Inka (activo cultural)</a>.</li>
+          <li><a target="_blank" href="https://octi.unsaac.edu.pe/internacionalizacion/">Internacionalización y convenios (OCTI)</a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- VISIÓN -->
+    <section id="vision" class="grid cols-2">
+      <div class="card">
+        <h3>Visión (estado actual y riesgo)</h3>
+        <p>En portales institucionales aparece una redacción de <em>visión sectorial</em> (educación de los peruanos) que no diferencia a la UNSAAC ni fija horizonte temporal.</p>
+        <p class="note">Ver <a target="_blank" href="https://www.unsaac.edu.pe/transparencia-institucional-indicador-55/">Transparencia – Misión/Visión</a>.</p>
+      </div>
+      <div class="card">
+        <h3>4 preguntas para una visión clara</h3>
+        <ul>
+          <li><strong>¿Qué queremos ser?</strong> Referente en investigación aplicada e innovación intercultural.</li>
+          <li><strong>¿Dónde/para quién?</strong> Cusco/Macro Región Sur con proyección global.</li>
+          <li><strong>¿Para cuándo?</strong> Horizonte 2030 (alineado al <a target="_blank" href="https://www.unsaac.edu.pe/unsaac-desarrolla-taller-para-la-elaboracion-del-pei-institucional-2024-2030/">PEI 2024–2030</a>).</li>
+          <li><strong>¿Qué nos diferencia?</strong> Tradición (1692), patrimonio, biodiversidad, bilingüismo, centros/labs y museos.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Propuesta de visión (modelo)</h3>
+        <p><em>“Para 2030, la UNSAAC será la universidad pública líder de la Macro Región Sur en investigación aplicada e innovación intercultural para el desarrollo andino–amazónico, reconocida por formación con empleabilidad ≥85%, ≥10 escuelas con acreditación internacional y ≥300 artículos Scopus/año en áreas de agroandino, salud rural, patrimonio y energía/agua”.</em></p>
+        <p class="note">Criterios de intención estratégica basados en Chiavenato y CEPAL/ILPES.</p>
+      </div>
+      <div class="card">
+        <h3>Historia y activos diferenciales</h3>
+        <ul>
+          <li><a target="_blank" href="https://es.wikipedia.org/wiki/Universidad_Nacional_de_San_Antonio_Abad_del_Cusco">Fundación 1692 (historia)</a>.</li>
+          <li><a target="_blank" href="https://museoinka.unsaac.edu.pe/">Museo Inka</a> y <a target="_blank" href="https://vrin.unsaac.edu.pe/">VRIN</a>.</li>
+          <li><a target="_blank" href="https://octi.unsaac.edu.pe/">Cooperación e internacionalización</a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FODA -->
+    <section id="foda" class="card">
+      <h3 style="margin-top:0">Matriz FODA (UNSAAC)</h3>
+      <p class="note">Metodología FODA clásica; cruce de factores y estrategias FO, DO, FA y DA.</p>
+
+      <div class="swot">
+        <div class="leaf a">
+          <h4>Amenazas</h4>
+          <ul>
+            <li>Competencia de universidades con mayores indicadores de investigación/empleabilidad.</li>
+            <li>Restricciones de financiamiento público y cambios regulatorios.</li>
+            <li>Demanda social por mayor pertinencia e inserción laboral.</li>
+          </ul>
+          <p class="note">Contexto: <a target="_blank" href="https://gestion.pe/peru/sunedu-otorga-licencia-institucional-universidad-nacional-san-antonio-abad-nndc-265905-noticia/">Gestión</a>, tendencias sector.</p>
+        </div>
+        <div class="leaf f">
+          <h4>Fortalezas</h4>
+          <ul>
+            <li>Licenciamiento SUNEDU por 8 años (2019).</li>
+            <li>Tradición académica (1692) y activos culturales (Museo Inka).</li>
+            <li>Líneas de investigación 2023–2026 aprobadas.</li>
+            <li>Proceso PEI 2024–2030 con CEPLAN.</li>
+          </ul>
+          <p class="note">Fuentes: <a target="_blank" href="https://www.sunedu.gob.pe/sunedu-otorga-la-licencia-institucional-a-la-universidad-nacional-de-san-antonio-abad-del-cusco/">SUNEDU</a>, <a target="_blank" href="https://vrin.unsaac.edu.pe/data/661-R-691-2024-UNSAAC-553541-PROBAR%20LAS%20LINEAS%20DE%20INVESTIGACI%C3%93N%20%20UNSAAC%202023-2026.pdf">VRIN</a>, <a target="_blank" href="https://museoinka.unsaac.edu.pe/">Museo Inka</a>, <a target="_blank" href="https://www.unsaac.edu.pe/unsaac-desarrolla-taller-para-la-elaboracion-del-pei-institucional-2024-2030/">PEI</a>.</p>
+        </div>
+        <div class="leaf d">
+          <h4>Debilidades</h4>
+          <ul>
+            <li>Heterogeneidad en la expresión pública de misión/visión.</li>
+            <li>Necesidad de elevar producción científica y acreditaciones en todas las escuelas.</li>
+            <li>Procesos administrativos con oportunidades de simplificación.</li>
+          </ul>
+          <p class="note">Evidencias: páginas de transparencia, VRIN, gestión de calidad.</p>
+        </div>
+        <div class="leaf o">
+          <h4>Oportunidades</h4>
+          <ul>
+            <li>PEI 2024–2030 como ventana para metas y diferenciación.</li>
+            <li>Internacionalización: convenios, movilidad y cotutelas.</li>
+            <li>Demanda regional de I+D en agroandino, patrimonio, salud y energía/agua.</li>
+          </ul>
+          <p class="note">Fuentes: <a target="_blank" href="https://octi.unsaac.edu.pe/internacionalizacion/">OCTI</a>, <a target="_blank" href="https://vrin.unsaac.edu.pe/">VRIN</a>, <a target="_blank" href="https://www.unsaac.edu.pe/unsaac-desarrolla-taller-para-la-elaboracion-del-pei-institucional-2024-2030/">PEI</a>.</p>
+        </div>
+      </div>
+
+      <details style="margin-top:18px">
+        <summary>📌 Estrategias derivadas (FO / DO / FA / DA)</summary>
+        <div class="matrix">
+          <div class="mcard">
+            <strong>FO</strong>
+            <ul>
+              <li>Centros de excelencia andina (AgroBio K’ayra, Patrimonio Digital, Salud Rural, Energía/Agua) apalancando licenciamiento + VRIN; metas de publicaciones y prototipos.</li>
+              <li>Escalar movilidad y convenios en esas áreas (doble titulación, cotutelas).</li>
+            </ul>
+          </div>
+          <div class="mcard">
+            <strong>DO</strong>
+            <ul>
+              <li>Unificar misión/visión y publicarlas en todo el ecosistema web alineadas al PEI 2024–2030, con KPI (Scopus, empleabilidad, acreditaciones).</li>
+              <li>Programa de mentoreo y fondos semilla para triplicar publicaciones en 3 años.</li>
+            </ul>
+          </div>
+          <div class="mcard">
+            <strong>FA</strong>
+            <ul>
+              <li>Clusters UNSAAC–Industria–Gobierno (turismo/patrimonio, agro, energía) para diversificar ingresos vía I+D y servicios tecnológicos.</li>
+              <li>Sistema Integrado de Gestión (ISO 21001/9001/45001) para eficiencia y resiliencia.</li>
+            </ul>
+          </div>
+          <div class="mcard">
+            <strong>DA</strong>
+            <ul>
+              <li>Mapa curricular por competencias y prácticas co-diseñadas con empleadores regionales; meta: ≥85% inserción a 12 meses.</li>
+              <li>Ruta de acreditación escalonada: ≥10 escuelas con acreditación internacional al 2030.</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- REFERENCIAS -->
+    <section id="referencias" class="refs card">
+      <h3 style="margin-top:0">Referencias (formato APA con enlaces)</h3>
+      <ol>
+        <li>CEPAL/ILPES. (2006). <em>Gestión pública</em>. <a target="_blank" href="https://repositorio.cepal.org/bitstreams/03c6838e-9c8f-4088-98de-f9038254bdec/download">https://repositorio.cepal.org/…/download</a></li>
+        <li>CEPAL/ILPES. (2017). <em>Planificación para el desarrollo en América Latina y el Caribe</em>. <a target="_blank" href="https://eclac.org/sites/default/files/publication/files/42139/S1700693_es.pdf">https://eclac.org/…/S1700693_es.pdf</a></li>
+        <li>Chiavenato, I. (s. f.). <em>Planeación estratégica: fundamentos y aplicaciones</em> (3.ª ed.). Gobierno de México. <a target="_blank" href="https://www.gob.mx/cms/uploads/attachment/file/911563/127-Planeacion-estrategica-fundametos-chiavenato-idalberto.pdf">PDF</a></li>
+        <li>UNSAAC. (2019). <em>Resolución N° 056-2019-SUNEDU/CD: Licencia institucional</em>. SUNEDU. <a target="_blank" href="https://www.sunedu.gob.pe/sunedu-otorga-la-licencia-institucional-a-la-universidad-nacional-de-san-antonio-abad-del-cusco/">Nota</a> · <a target="_blank" href="https://ogc.unsaac.edu.pe/wp-content/uploads/2024/09/ResolucionN056_2019_Sunedu.pdf">Resolución (PDF)</a></li>
+        <li>UNSAAC – VRIN. (2024). <em>Líneas de investigación UNSAAC 2023–2026</em> (R-691-2024). <a target="_blank" href="https://vrin.unsaac.edu.pe/data/661-R-691-2024-UNSAAC-553541-PROBAR%20LAS%20LINEAS%20DE%20INVESTIGACI%C3%93N%20%20UNSAAC%202023-2026.pdf">PDF</a></li>
+        <li>UNSAAC. (2023, agosto 4). <em>Taller para la elaboración del PEI institucional 2024–2030</em>. <a target="_blank" href="https://www.unsaac.edu.pe/unsaac-desarrolla-taller-para-la-elaboracion-del-pei-institucional-2024-2030/">https://www.unsaac.edu.pe/…</a></li>
+        <li>UNSAAC. (s. f.). <em>Transparencia institucional – Misión y Visión</em>. <a target="_blank" href="https://www.unsaac.edu.pe/transparencia-institucional-indicador-55/">https://www.unsaac.edu.pe/…</a></li>
+        <li>UNSAAC – OCTI. (s. f.). <em>Internacionalización y convenios</em>. <a target="_blank" href="https://octi.unsaac.edu.pe/internacionalizacion/">https://octi.unsaac.edu.pe/…</a></li>
+        <li>UNSAAC – Museo Inka. (s. f.). <em>Museo Inka</em>. <a target="_blank" href="https://museoinka.unsaac.edu.pe/">https://museoinka.unsaac.edu.pe/</a></li>
+        <li>Wikipedia. (s. f.). <em>Universidad Nacional de San Antonio Abad del Cusco</em>. <a target="_blank" href="https://es.wikipedia.org/wiki/Universidad_Nacional_de_San_Antonio_Abad_del_Cusco">https://es.wikipedia.org/wiki/…</a></li>
+      </ol>
+      <p class="note">Las referencias web se incluyen por trazabilidad. Para un informe formal, puede reemplazar Wikipedia por fuentes primarias adicionales.</p>
+    </section>
+
+    <footer class="note" style="margin-top:18px">Hecho con ❤ para uso académico. Puedes copiar y pegar este HTML en tu LMS o página.</footer>
+  </div>
+</body>
+</html>
