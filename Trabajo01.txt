@@ -1,0 +1,9 @@
+Grupo:
+.- Arturo Cuba
+.- Antony Japura
+
+Trabajo encargado en el siguiente enlace:
+- https://waready.github.io/Foda-UNSAAC/
+
+Adjuntos:
+- archivo en formato html (index.html)
